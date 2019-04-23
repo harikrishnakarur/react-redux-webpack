@@ -5,9 +5,7 @@ import './style.scss';
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <AppBar title="React Toolbox">
-        
-      </AppBar>
+      <AppBar title="React Toolbox"></AppBar>
     );
   }
 }

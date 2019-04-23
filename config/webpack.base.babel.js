@@ -39,12 +39,12 @@ module.exports = (options) => ({
         test: /\.css$/,
         include: /node_modules/,
         use: ['style-loader', {
-          loader: "css-loader",
+          loader: 'css-loader',
           options: {
             modules: true, // default is false
             sourceMap: true,
             importLoaders: 1,
-            localIdentName: "[name]--[local]--[hash:base64:8]"
+            localIdentName: '[name]--[local]--[hash:base64:8]'
           }
         }]
       },

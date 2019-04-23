@@ -4,17 +4,14 @@ import { shallow } from 'enzyme';
 import Footer from '../index';
 
 describe('<Footer />', () => {
-  it('should render the copyright notice', () => {
+  it('should render footer', () => {
     const renderedComponent = shallow(<Footer />);
     expect(
       renderedComponent.contains(
-        <section>This project is licensed under the MIT license.</section>
+        <div className="footer">
+          Created by Hari Krishna K
+        </div>
       )
     ).toBe(true);
-  });
-
-  it('should render the credits', () => {
-    const renderedComponent = shallow(<Footer />);
-    expect(renderedComponent.text()).toContain('Dinesh Pandiyan');
   });
 });
